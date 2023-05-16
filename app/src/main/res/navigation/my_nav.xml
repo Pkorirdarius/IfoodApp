@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.modcom.ifoodapp.ui.favoriteRecipe.fragments.health.recipe.Home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/favoriteRecipe"
+        android:name="com.modcom.ifoodapp.ui.favoriteRecipe.FavoriteRecipe"
+        android:label="favorite_recipe"
+        tools:layout="@layout/fragment_favorite_recipe" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.modcom.ifoodapp.ui.favoriteRecipe.fragments.health.search.Search"
+        android:label="search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/health"
+        android:name="com.modcom.ifoodapp.ui.favoriteRecipe.fragments.health.Health"
+        android:label="others"
+        tools:layout="@layout/fragment_health" />
+</navigation>
